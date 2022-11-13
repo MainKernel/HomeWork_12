@@ -61,7 +61,7 @@ class FizzBuzz {
         this.counter = new AtomicInteger(1);
     }
 
-    // printFizz.run() outputs "fizz".
+
     public void fizz(Runnable printFizz) throws InterruptedException {
         int step = n/3 - n/15;
         int i = 0;
@@ -76,7 +76,7 @@ class FizzBuzz {
         }
     }
 
-    // printBuzz.run() outputs "buzz".
+
     public void buzz(Runnable printBuzz) throws InterruptedException {
         int step = n/5 - n/15;
         int i = 0;
@@ -91,7 +91,7 @@ class FizzBuzz {
         }
     }
 
-    // printFizzBuzz.run() outputs "fizzbuzz".
+
     public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
         int step = n/15;
         int i = 0;
@@ -106,7 +106,7 @@ class FizzBuzz {
         }
     }
 
-    // printNumber.accept(x) outputs "x", where x is an integer.
+
     public void number(IntConsumer printNumber) throws InterruptedException {
         int step = n - n/3 - n/5 + n/15;
         int i = 0;
